@@ -1,5 +1,5 @@
-let On = document.getElementById('on')
-let Off = document.getElementById('off')
+let OnOff = document.getElementById('onoff')
+
 let lamp = document.getElementById('lamp')
 
 function lampB() {
@@ -19,10 +19,20 @@ function lampOff() {
 function lampBr() {
     lamp.src = 'ft/quebrada.jpg'
 }
+function lampOnOff() {
+    if(OnOff.textContent == ('On')) {
+        lampOn()
+        OnOff.textContent = 'Off'
+    } else {
+        lampOff()
+        OnOff.textContent = 'On'
+    }
+}
+
 // adicionando o evento:
 
-On.addEventListener('click', lampOn)
-Off.addEventListener('click', lampOff)
+OnOff.addEventListener('click', lampOnOff)
+
 lamp.addEventListener('mouseover', lampOn)
 lamp.addEventListener('mouseout', lampOff)
 lamp.addEventListener('dblclick', lampBr)
