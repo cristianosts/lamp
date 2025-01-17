@@ -17,7 +17,7 @@ function lampOff() {
     }
 }
 function lampBr() {
-    lamp.src = 'ft/quebrada.jpg'         
+    lamp.src = 'ft/quebrada.jpg'           
 }
 function lampOnOff() {
     if(OnOff.textContent == ('On')) {
