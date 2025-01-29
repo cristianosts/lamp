@@ -8,7 +8,7 @@ function lampB() {
 
 function lampOn() {
     if(!lampB()) {
-   lamp.src = 'ft/ligada.jpg'        
+   lamp.src = 'ft/ligada.jpg'          
     }
 }
 function lampOff() {
